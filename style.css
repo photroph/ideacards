@@ -1,0 +1,122 @@
+body, form { margin: 0; }
+.title {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  background-color: #21610B;
+}
+.flexbox {
+  display: flex;
+  margin: 0 auto;
+}
+.add_area ul {
+  height: 76vh;
+  margin-bottom: 0;
+  border: 1px solid;
+  overflow-y: auto;
+}
+/*
+.add_area ul li {
+  z-index: -1;
+}*/
+.add_area ul li:not(:first-of-type) {
+  margin-top: 0.2em;
+}
+.add_area li > span {
+  display: inline-block;
+  padding: 0.2em;
+  border: 1px solid #111;
+  background-color: #F4FA58;
+  cursor: grab;
+}
+.word_choose_area {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.border_area {
+  border: 1px solid #111;
+  min-height: 116px;
+  text-align: center;
+}
+.disp_area {
+  text-align: center;
+}
+[name='num_to_choose']{
+  width: 3em;
+}
+#chosen_words span {
+  display: inline-block;
+  padding: 0.3em;
+  border: 1px solid #111;
+  background-color: #F4FA58;
+  cursor: grab;
+}
+#chosen_words span:not(:first-of-type) {
+  margin-left: 0.3em;
+}
+#stash_area {
+  width: 50vw;
+  min-width: 30vw;
+  min-height: 55vh;
+  position: relative;
+}
+#stash_area > span {
+  display: inline-block;
+  padding: 0.3em;
+  margin-top: 0.1em;
+  border: 1px solid #111;
+  background-color: #F4FA58;
+  cursor: grab;
+}
+#delete_stashed_word {
+  height: 20vh;
+  margin: 1vh auto 0;
+  border: 1px solid;
+  text-align: center;
+  background-image: url(./trash.png);
+  background-color: rgba(0,43,71,0.1);
+  background-repeat: no-repeat;
+  background-size: 8em;
+  background-position: center 3em;
+}
+#delete_stashed_word p {
+  color: #fff;
+  visibility: hidden;
+}
+.flexbox > div {
+  margin-left: 1vw;
+}
+.flexbox > div:last-child {
+  padding-left: 2em;
+  border-left: 1px solid gray;
+}
+/*.word_csv_dragged, */.word_stashed_dragged {
+  background-color: rgba(0,43,71,1)!important;
+}
+/*.word_csv_dragged p, */.word_stashed_dragged p {
+  visibility: visible!important;
+}
+.triangle01 { 
+  position: relative;
+  top: 40vh;
+  width: 0;
+  height: 0;
+  border-top: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  border-left: solid 15px #697b91;
+}
+#displayed_words p:first-of-type {
+  position: relative;
+}
+#displayed_words p:first-of-type::before {
+  display: inline-block;
+  position: absolute;
+  top: 2.7em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  border-right: solid 15px #697b91;
+  content: "";
+}
